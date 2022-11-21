@@ -1,0 +1,86 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #bbb;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-shadow: 2px 2px 4px #bbb;
+}
+
+h3 {
+  text-shadow: 2px 2px 4px #bbb;
+}
+
+p {
+  text-decoration: underline;
+}
+/*_______________LES SECTIONS DE LA PAGE WEB______________________*/
+
+#accueil {
+  background-color: rgb(48, 131, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#inscription {
+  background-color: rgb(73, 146, 255);
+}
+
+#galerie {
+  background-color: rgb(90, 155, 252);
+}
+
+#evenement {
+  background-color: rgb(105, 163, 248);
+}
+
+#video {
+  background-color: rgb(133, 181, 253);
+}
+
+#footer {
+  background-color: rgb(156, 195, 255);
+}
+
+/*
+Menu principal du site.
+On utilise un positionnement fixed,
+pour que le menu reste en haut de chacune des sections
+*/
+
+/*___________GESTION DU MENU______________________________*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 4px 1rem;
+}
