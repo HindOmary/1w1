@@ -1,0 +1,231 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px #bbb;
+  display: flex;
+  justify-content: center;
+}
+
+h2 {
+  text-shadow: 2px 2px 4px #bbb;
+}
+
+h3 {
+  text-shadow: 2px 2px 4px #bbb;
+}
+
+p {
+  text-decoration: underline;
+}
+/*_______________LES SECTIONS DE LA PAGE WEB______________________*/
+
+#accueil {
+  background-color: rgb(48, 131, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#inscription {
+  background-color: rgb(73, 146, 255);
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+}
+
+#tableau {
+  background-color: rgb(90, 155, 252);
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+}
+
+#articles {
+  background-color: rgb(105, 163, 248);
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+}
+
+#galerie {
+  background-color: rgb(133, 181, 253);
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+}
+
+#video {
+  background-color: rgb(156, 195, 255);
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+#footer {
+  background-color: rgb(178, 208, 253);
+  display: flex;
+  justify-content: first baseline;
+  flex-direction: column;
+}
+
+/*
+Menu principal du site.
+On utilise un positionnement fixed,
+pour que le menu reste en haut de chacune des sections
+*/
+
+/*___________GESTION DU MENU______________________________*/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: black;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 4px 1rem;
+}
+
+/*___________GESTION DU TABLEAU______________________________*/
+
+.mon_tableau {
+  border-collapse: collapse;
+  border: 1px solid rgb(100, 144, 255);
+}
+
+.mon_tableau td,
+.mon_tableau th {
+  border: 1px solid #555;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.mon_tableau {
+  font-size: 1.2rem;
+  background-color: rgb(117, 163, 255);
+}
+
+/*__________________SECTION FORMULAIRE INSCRIPTION_____________________________*/
+/* Style de form pour l'element avec un border autour */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.container {
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+
+/* Style the input elements and the submit button */
+input[type="text"],
+input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Add margins to the checkbox */
+input[type="checkbox"] {
+  margin-top: 16px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+  background-color: #2273ca;
+  color: white;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+/*_______________________SECTION ARTiCLES___________________________*/
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  max-width: 50%;
+}
+
+.image {
+  flex-basis: 40%;
+}
+
+.text {
+  font-size: 10px;
+  padding-left: 10px;
+}
+
+/*_______________________SECTION FOOTER___________________________*/
+/*------------------footer-------------------*/
+footer {
+  background-color: black;
+  color: white;
+  min-height: 70vh;
+  text-align: center;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.footer {
+  width: 1100px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+footer dl {
+  display: inline-block;
+  width: 80%;
+  vertical-align: top;
+  text-align: justify;
+  margin: 20px;
+}
+
+footer dl dt {
+  margin-left: 38px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+form img {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}
+
+form {
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  width: 230px;
+}
